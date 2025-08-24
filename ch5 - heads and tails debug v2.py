@@ -3,8 +3,8 @@
 import random
 guess = ''
 toss = ''
-#i = ''
-def randomheadstails(toss):
+
+def randomheadstails(toss): # random interpretation from 0 and 1 to heads and tails also presented here, further down the script it is being used by headsTails function
     toss = random.randint(0, 1)  # 0 is tails, 1 is heads
     if toss == int(1):  #the game didnt have a translation from 0 and 1 to heads and tails, so I had to add this, before the actual comparison is started
         toss = 'heads'
@@ -19,10 +19,10 @@ def headsTails(guess):
         print('Nope! Guess again!')
 
 print('Guess the coin toss! Enter heads or tails:')
-for i in range(0,2):
+for i in range(0,2): #fixed logic of 2 tries in total
 
     guess = input()
-    if str(guess) in ('heads', 'tails'):
+    if str(guess) in ('heads', 'tails'): #fixed the logic of incorrect input handling
         headsTails(guess)
 
     else:
