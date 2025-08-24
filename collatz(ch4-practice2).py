@@ -12,16 +12,16 @@ def collatz(number):
         return number
 
 
+while True:
+    print('enter your number into collatz!')
+    try:
+        number = int(input('>')) # I did it! this part is calling the function on itself updating number as it goes another iteration. At the end it shows 2, and runs another run that turns 2 into 1 and function breaks!!!
+        while number != 1:
+            number = collatz(number)
+            print(number)
+        print('End')
+        break # added outer while loop to make the program loop if case if user enters letters instead of numbers. If number entered - all OK, program executes and exits, if letter - it loops with error message until number is entered
+    except:
+        print('Please enter a number, not some BS')
 
-print('enter your number into collatz!')
-try:
-    number = int(input('>')) # I did it! this part is calling the function on itself updating number as it goes another iteration. At the end it shows 2, and runs another run that turns 2 into 1 and function breaks!!!
-    while collatz(number) != 1:
-        print(collatz(number), sep = ' ')
-        number = collatz(number)
-        collatz(number)
-
-
-except:
-    print('Please enter a number, not some BS')
 
