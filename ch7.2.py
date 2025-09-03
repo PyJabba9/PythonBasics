@@ -8,15 +8,15 @@
 
 # TASK 2: Analytics
 # Add functionality to:
-# - Show TOP salesperson (highest total amount)
-# - Show AVERAGE amount per employee
-# - Show TOTAL sum of all sales
+# - Show TOP salesperson (highest total amount) - DONE
+# - Show AVERAGE amount per employee - DONE
+# - Show TOTAL sum of all sales - DONE
 
 # TASK 3: Search
 # Allow user to:
-# - Enter employee name
-# - Display their results
-# - If not found - show "Employee not found"
+# - Enter employee name - DONE
+# - Display their results - DONE
+# - If not found - show "Employee not found" - DONE
 
 def employeeFinder(employeeDB):
     print('In order to find specific employee, please type his name:')
