@@ -97,7 +97,7 @@ ABC += list('abcdefghijklmnopqrstuvwxyz')
 employeeDB = {'Anna':30,'Susan':10,'George':15}
 while True:
     print('Welcome to my small database of sales reps and sales, here you can store sales data for specific salespeople')
-    print('In order to start, please select what would you like to do:\n 1. In order to add new users, please type "add"\n 2. In order to show total sum of all sales made by salespeople, please type "total".\n 3. To get average number of sales, type "avg". \n 4. To get top salesperson, type "top".\n 5. In order to find specific employee, type "find". \n For Exit - type exit')
+    print('In order to start, please select what would you like to do:\n 1. In order to add new users, please type "add"\n 2. In order to show total sum of all sales made by salespeople, please type "total".\n 3. Toaverage number of sales, type "avg". \n 4. To get top salesperson, type "top".\n 5. In order to find specific employee, type "find". \n For Exit - type exit')
     aa = input()
     if aa == 'add':
         addingusers(employeeDB)
