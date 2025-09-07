@@ -47,23 +47,56 @@ for i in N:
     namebase.update({'Email': eml.group()})
 
     nm = name_pattern_obj.search(i)
-    namebase.update({'Name': nm.group()})
+    s = nm.group()
+    s = s.lower()
+    namebase.update({'Name': s })
 
     DB += [namebase]
     namebase = {} # i figured out that you have to clear the dictionary after every iteration.
 #print(DB)  # it works - 3 dictionaries in one list
 
-#print whole DB  # this is print all module for future UI
-#for o in DB:
-#    print(o)
+#print(DB)
+
+def printall():
+
+    for o in DB:
+        print('-------------------------')
+        print(o['Name'].title())
+        print(o['Email'])
+        print(o['Phone'])
 
 
-x = 'John Smith'   #this is working finder !!!! + add into UI as soon as other is done
-for o in DB:
-    if x in o.values():
-        print(o)
+def databasefinder(): # databasefinder - workis with any case (upper or lower will be transformed into lower and then back to title once printed.
+    print('Enter Email (name.surname@company.com) \n either (Name Surname) \n Or phone number (xxx-xxx-xxxx format)')
+    x = input()   #this is working finder !!!! + add into UI as soon as other is done
+    x = str(x.lower())
 
 
 
+    outcome = 0
+    for o in DB:
+        for m in range(len(o.items())):
+            if x in o.values():
+                outcome += 1
+                print(o['Name'].title())
+                print(o['Email'])
+                print(o['Phone'])
+                break
+
+    if outcome == 0:
+        print('Not found')
 
 
+
+while True:
+    print('Welcome to my database of workers, in order to look for someone, please input "find"\n In order to print whole database, input "all"\n to exit the program, input "exit"')
+    b = input()
+    if b == 'find':
+
+        databasefinder()
+    elif b == 'all':
+        printall()
+    elif b == 'exit':
+        break
+
+databasefinder()
