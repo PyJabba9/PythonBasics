@@ -91,15 +91,15 @@ if int(max(DL)) <= 12: #error here
 
 if v == '1st':
     print('All good, date is in  DD/MM/YYYY (EU) format')
-    pattern.sub(r'\2/\4/\6',TEST_text)
+    #pattern.sub(r'\2/\4/\6',TEST_text)
     pyperclip.copy(pattern.sub(r'\2/\4/\6',TEST_text))
 elif v == '2nd':
-    pattern.sub(r'\4/\2/\6',TEST_text)
+    #pattern.sub(r'\4/\2/\6',TEST_text)
     pyperclip.copy(pattern.sub(r'\4/\2/\6',TEST_text))
 elif v == 'aftY':
-    pattern.sub(r'\4/\6/\2',TEST_text)
+    #pattern.sub(r'\4/\6/\2',TEST_text)
     pyperclip.copy(pattern.sub(r'\4/\6/\2',TEST_text))
 elif v == 'lst':
-    pattern.sub(r'\6/\4/\2',TEST_text)
+    #pattern.sub(r'\6/\4/\2',TEST_text)
     pyperclip.copy(pattern.sub(r'\6/\4/\2',TEST_text))
 
