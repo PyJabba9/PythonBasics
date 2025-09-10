@@ -32,9 +32,9 @@ DL = []
 TEST_text = str(pyperclip.paste())
 pattern = re.compile(r'''(
     (\d{4}|\d{2}) #2
-    (\s|/|-|.)
+    (\s|/|-|\.)
     (\d{4}|\d{2}) #4
-    (\s|/|-|.)
+    (\s|/|-|\.)
     (\d{4}|\d{2}) #6
     )''', re.VERBOSE)
 
