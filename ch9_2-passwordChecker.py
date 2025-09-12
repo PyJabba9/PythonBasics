@@ -7,7 +7,9 @@ it must be at least eight characters long,
 contain both uppercase and lowercase characters,
 and have at least one digit.
 #2
-LETS MAKE IT A PASSWORD GEN TOOL!!!!!!!!!!!!!!!
+need to add logic for checking same letter being used in password too much - for example AAAAAAAAAAAAAAAAAAAaaa222! is correct from the perspective of my checker
+but is it safe? https://www.passwordmonster.com/ - according to this site, it is very bad password
+
 
 '''
 
@@ -38,6 +40,13 @@ def passwcheck(passwd):
         uplow = True
     else:
         print('You password has to have at least 1 uppercase character')
+    passw_pattern_low = re.compile(r'[a-z]+') #at least 1 lowercase character
+
+    if re.search(passw_pattern_low,passwd):
+        #print(passw_pattern_low.findall(passwd))
+        low = True
+    else:
+        print('You password has to have at least 1 lowercase character')
 
     passw_pattern_specc = re.compile(r'\S\W') #at least 1 special character
 
@@ -55,7 +64,7 @@ def passwcheck(passwd):
         #print(passw_pattern_nospace.findall(passwd))
         nospace = True
     try:
-        if (dig and _len and uplow and specc and nospace) == True:
+        if (dig and _len and uplow and specc and nospace and low) == True:
             print('Your password is OK, you have it in your clipboard ;)')
             pyperclip.copy(passwd)
         else:
