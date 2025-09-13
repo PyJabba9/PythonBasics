@@ -20,10 +20,7 @@ import re, pyperclip
 PS = []
 
 def passwcheck(passwd):
-    n = 0
-    m = 4
-    n = int(n)
-    m = int(m)
+
     seq = '1234567890qwertyuiopasdfghjklzxcvbnm0987654321poiuytrewqlkjhgfdsamnbvcxz'
     passw_pattern_dig = re.compile(r'\d+') #at least 1 digit part goes below
 
@@ -76,7 +73,7 @@ def passwcheck(passwd):
     PS = []
     PS = passwd
     PS2 = PS.lower()
-    if any(PS2.count(x) >= len(PS2)//2 for x in PS): # checking duplicated symbols
+    if any(PS2.count(x) >= len(PS2)//2 for x in PS2): # checking duplicated symbols
         nodup = False
         print('Your password has too many same symbols, please make it more complex')
     else:
@@ -84,9 +81,8 @@ def passwcheck(passwd):
         nodup = True
 
     for i in range(len(passwd)):  # checking sequence of the characters in keyboard to avoid EZ crack
-        phrase = passwd[n:m]
-        n +=1
-        m +=1
+        phrase = passwd[i:i+4]
+
         if phrase.lower() in seq:
             print('Your password contains keyboard sequence that is easy to crack, please avoid those - "QWERTY", etc')
             seqnc = False
