@@ -1,22 +1,30 @@
 '''
 Strong Password Detection
-#1
+#1 - done
 Write a function that uses regular expressions to make sure the password string it is passed is strong.
 A strong password has several rules:
 it must be at least eight characters long,
 contain both uppercase and lowercase characters,
 and have at least one digit.
-#2
+#2 - done
 need to add logic for checking same letter being used in password too much - for example AAAAAAAAAAAAAAAAAAAaaa222! is correct from the perspective of my checker
-but is it safe? https://www.passwordmonster.com/ - according to this site, it is very bad password
+but is it safe? https://www.passwordmonster.com/ -  % of same symbol usage is key - if same symbol used more than say >=50%
+of the whole phrase - ask to change pass
+#3 - done
+check common keyboard combinations - "qwerty" thing for the whole keyboard. - done
 
 
 '''
 
 import re, pyperclip
-
+PS = []
 
 def passwcheck(passwd):
+    n = 0
+    m = 4
+    n = int(n)
+    m = int(m)
+    seq = '1234567890qwertyuiopasdfghjklzxcvbnm0987654321poiuytrewqlkjhgfdsamnbvcxz'
     passw_pattern_dig = re.compile(r'\d+') #at least 1 digit part goes below
 
     if re.search(passw_pattern_dig,passwd):
@@ -63,14 +71,37 @@ def passwcheck(passwd):
     else:
         #print(passw_pattern_nospace.findall(passwd))
         nospace = True
+
+
+    PS = []
+    PS = passwd
+    PS2 = PS.lower()
+    if any(PS2.count(x) >= len(PS2)//2 for x in PS): # checking duplicated symbols
+        nodup = False
+        print('Your password has too many same symbols, please make it more complex')
+    else:
+        #print('Your password is OK')
+        nodup = True
+
+    for i in range(len(passwd)):  # checking sequence of the characters in keyboard to avoid EZ crack
+        phrase = passwd[n:m]
+        n +=1
+        m +=1
+        if phrase.lower() in seq:
+            print('Your password contains keyboard sequence that is easy to crack, please avoid those - "QWERTY", etc')
+            seqnc = False
+            break
+        else:
+            seqnc = True
     try:
-        if (dig and _len and uplow and specc and nospace and low) == True:
+        if (dig and _len and uplow and specc and nospace and low and nodup and seqnc) == True:
             print('Your password is OK, you have it in your clipboard ;)')
             pyperclip.copy(passwd)
         else:
             print('Your have errors in your password, please try new one')
     except:
         print('Your have errors in your password, please try new one')
+
 
 reply = ''
 
