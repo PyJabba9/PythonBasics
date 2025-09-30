@@ -1,0 +1,201 @@
+customer_id,name,segment,city
+1,James Howard,Retail,Alexisside
+2,Dennis Williams,Online,West Brandon
+3,Calvin Nielsen,Wholesale,New Kellyberg
+4,Edward Fuller,Wholesale,Garciatown
+5,Heidi Lee,Retail,Taylormouth
+6,Matthew Mejia,Wholesale,Jackton
+7,Dr. Sharon James,Wholesale,Shelleyfort
+8,Roy Martin,Wholesale,Port Cameronfort
+9,Michael Miles,Retail,New Crystalton
+10,Andrea Reid,Retail,East Lisa
+11,Danielle Ford,Wholesale,Christopherbury
+12,Timothy Watts,Online,New Kathybury
+13,Frederick Tate,Wholesale,Hayesmouth
+14,Rodney Trujillo,Retail,Michellechester
+15,Austin Gentry,Online,Ashleyton
+16,Michelle Lewis,Retail,Port Jaredborough
+17,Dr. Marvin Thomas Jr.,Wholesale,Donnaburgh
+18,Kimberly Burgess,Retail,East Andrea
+19,Kevin Cox,Retail,North Ricky
+20,Brenda Snyder PhD,Retail,Carterbury
+21,Brittany Moore,Wholesale,Jasminemouth
+22,Linda Cruz,Retail,Lake Jesusview
+23,Julie King,Online,South Danny
+24,Terri Frazier,Wholesale,Lake Edward
+25,Stephen Potter,Online,Margaretland
+26,Gina Carter,Retail,East Laurashire
+27,Aaron Bowen,Retail,Scottmouth
+28,Valerie Gill,Online,Hollyview
+29,Ashley Garrett,Retail,Kimton
+30,Katie Gonzalez,Wholesale,Navarroview
+31,Christopher Ashley,Retail,North Jeremyshire
+32,Tamara George,Retail,Port Emilyview
+33,Brian Cox DVM,Wholesale,Port Katelynfort
+34,Cynthia Allen,Online,Moonburgh
+35,Angela Dennis,Wholesale,Waltersfort
+36,Vanessa Patel,Retail,South Michaelmouth
+37,Matthew Arroyo,Wholesale,Elizabethburgh
+38,Joseph Obrien,Online,Robertfort
+39,Tanya Campos,Retail,Elainefurt
+40,Michelle Ross,Wholesale,South Christopherview
+41,Jacqueline Lam,Wholesale,Darrellfurt
+42,David Brown,Retail,Lake Mollymouth
+43,Julian Chapman,Online,Brownhaven
+44,Michael Brown,Retail,Cindyfort
+45,Andre Rivera,Retail,Wolfborough
+46,Diana Washington,Wholesale,Andreaport
+47,Miranda Khan,Wholesale,Gilmorefort
+48,Dana Kennedy,Wholesale,North Teresabury
+49,Brandon Hopkins,Retail,West Andrea
+50,Jason Shields,Retail,Davisville
+51,Matthew Lucas,Wholesale,Valentineberg
+52,Nicholas Mcbride,Retail,Cantuport
+53,Corey Herrera,Wholesale,Robertfort
+54,Clifford Ford,Online,Sanchezside
+55,Angela Morton,Online,South James
+56,Annette Pearson,Retail,Port Chad
+57,Alexis Davis,Retail,Morganhaven
+58,Cynthia Russell,Retail,Loriport
+59,Dr. Steven Martin,Wholesale,Maryshire
+60,James House,Retail,Grimesmouth
+61,Dominique Horton,Online,Reedside
+62,Rachel Stanley,Retail,Gibsonmouth
+63,Mr. Daniel Brown,Retail,Lake John
+64,Amy Edwards,Retail,Hallchester
+65,John Calhoun,Retail,West Juliefurt
+66,Amy Romero,Online,Mcneilberg
+67,Andrea Jones,Wholesale,Hannaberg
+68,Jennifer David,Retail,Mollymouth
+69,Lauren Williams,Online,New Reneetown
+70,Matthew Cunningham,Retail,South Monica
+71,Dean Santiago,Online,North Terrance
+72,Derek Anderson,Wholesale,Matthewfurt
+73,Joyce Hickman,Wholesale,Port Markside
+74,Alexandra Howell,Wholesale,Finleyfort
+75,Ariel Medina,Wholesale,New Caseyport
+76,Brandi Bailey,Online,Lake Christopher
+77,David Mitchell,Wholesale,Port Cynthiaville
+78,Joshua Turner,Retail,Jacksonport
+79,Dr. Kendra Contreras,Online,North Markton
+80,Tara Garcia,Wholesale,Michaelchester
+81,Deborah Preston,Wholesale,East Amanda
+82,Brittney Campbell,Wholesale,East Gregory
+83,Grant Watts,Online,Harveybury
+84,Kathy King,Wholesale,Durhamberg
+85,Amber Walters,Wholesale,South Dana
+86,Amanda Cook,Online,Scotttown
+87,William Martin,Retail,Santanaside
+88,Michael Hoffman,Wholesale,North Scott
+89,Tony Vazquez,Wholesale,Vanessaport
+90,Andrew Wood,Online,Vaughnmouth
+91,Jessica Williams,Retail,Jamesfurt
+92,Timothy Stanton,Online,Rodriguezfurt
+93,Hunter Fleming,Retail,Baileyport
+94,Heather Castro,Online,Port Dominiqueview
+95,Valerie Brady,Retail,New Michelleton
+96,Cynthia Martin,Wholesale,Wallport
+97,Cassandra Gutierrez,Online,New Laurie
+98,Tim Patton,Retail,Lake James
+99,Michael Moss,Online,Ericaberg
+100,Christopher Haynes,Online,Lake Debbieport
+101,Andrew Ruiz,Wholesale,Johnsonstad
+102,Thomas Bailey,Retail,North Renee
+103,Shelby Walker,Wholesale,Julieburgh
+104,Jennifer Ramirez,Retail,East Kristin
+105,Raymond Bell,Wholesale,Alyssaview
+106,Meghan Anthony,Retail,West Robin
+107,Alexander Wiley,Retail,Coffeyport
+108,Kevin Terrell,Online,Lindamouth
+109,Kyle Reed,Retail,East Karenbury
+110,Jessica Joyce,Online,Coffeyside
+111,Steven Lee,Wholesale,Christopherfurt
+112,Jeffrey Meyer,Online,West Amandamouth
+113,Melissa Bentley,Online,Emilyview
+114,Christina Reynolds,Online,Carsonstad
+115,Tammie Hanson,Wholesale,Lake Jesustown
+116,Belinda Mccullough,Online,Rosebury
+117,Mary Nguyen,Wholesale,Lake Madisonport
+118,Kristen Lee,Retail,Wilsonton
+119,Jamie Adkins,Wholesale,West Wendyville
+120,Keith Sullivan,Online,East Paigeberg
+121,Elizabeth Clark,Retail,Chavezside
+122,Lisa Morris,Retail,Matthewsberg
+123,Michael Dixon,Online,Penafort
+124,Toni Fitzgerald,Retail,Crosbyview
+125,Diane Beck,Online,Lake Mitchellmouth
+126,Anna Crane,Wholesale,Sampsonstad
+127,Eric Drake,Online,Lake Michaelstad
+128,Angel Riggs,Retail,South Joshuaville
+129,Patricia Gibson,Online,Davisborough
+130,Laura Higgins,Retail,North Kristinbury
+131,James Hernandez,Online,Port Anne
+132,Stephanie Dalton,Wholesale,Port Kathyborough
+133,Paula Robinson,Wholesale,Port Molly
+134,Melissa Marshall,Online,Kimtown
+135,Sylvia Martinez,Online,Micheleberg
+136,John Schmidt,Wholesale,New John
+137,Emily Fischer,Online,North Donna
+138,Robert Mcclain,Online,East Alexisbury
+139,Terry Griffin,Wholesale,Alfredview
+140,Scott Cole,Retail,East Judyhaven
+141,Sara Ramirez,Online,Lake Brycemouth
+142,Kari Allen,Retail,Williamville
+143,Micheal Young,Retail,Gordonton
+144,Steven Miller,Online,Stephentown
+145,James Hernandez,Online,South Melaniechester
+146,Jason Rivera,Wholesale,South Jennifermouth
+147,Antonio Wall,Retail,North Marcberg
+148,Randy Shah,Retail,East Joshuashire
+149,Spencer Johnston,Online,Oscarhaven
+150,Tommy Evans,Wholesale,Shawnchester
+151,Steven Houston,Wholesale,Port Jacquelineside
+152,Morgan Marsh,Online,South Shannon
+153,Katherine Nelson,Retail,South Matthew
+154,Mr. Michael Yates,Wholesale,Rossville
+155,Sara Calhoun,Wholesale,Ronaldview
+156,Ms. Susan Vargas,Wholesale,Stephaniefort
+157,Angela Patterson,Online,North Marieland
+158,Catherine Green,Wholesale,Davisstad
+159,Jesse Rogers,Retail,New Brian
+160,Diana Bean,Retail,Elizabethchester
+161,Ruben Ruiz,Wholesale,Morganchester
+162,Amy Crane,Retail,West Carolinestad
+163,Barry Bernard,Wholesale,New Williamberg
+164,Andre Wright,Wholesale,Walkerville
+165,Lisa Allen,Online,Meganstad
+166,Brian Gould,Online,Port Joshuabury
+167,David Wood,Online,Bruceside
+168,Tracey Higgins,Online,New Sarahview
+169,Carla Collins,Retail,East Joshuaport
+170,Tanya Johnston,Online,Michaelburgh
+171,Jaime David,Wholesale,New Diane
+172,Kevin Rivas,Retail,East Joycetown
+173,Michael Turner,Online,Lake Alyssafurt
+174,Renee Hogan,Online,Chavezburgh
+175,Amanda Patel,Wholesale,Larrymouth
+176,Andrea Holland,Retail,North Ericton
+177,Jason Henry,Wholesale,West Scottchester
+178,Jack Snow,Retail,Lawsonchester
+179,Christian Thompson,Online,Jasonhaven
+180,Marie Gilbert,Retail,West Russellport
+181,Patricia Marshall,Online,Roseport
+182,Leslie Morris,Wholesale,East Randallton
+183,Timothy Ramirez,Retail,East Kevinborough
+184,Paul Hudson,Retail,Port Jonathan
+185,Gabrielle Snyder,Retail,Davidfort
+186,John Kelly,Online,Thompsonfurt
+187,Douglas Carlson,Online,New Angelica
+188,Kristi Black,Retail,Charleston
+189,David Russell,Wholesale,Smithland
+190,Cynthia Alvarez,Online,Barbarashire
+191,Joan Smith,Retail,Mckinneychester
+192,Jared Sanchez,Wholesale,Dariustown
+193,Jackie Tran,Retail,Georgemouth
+194,Zachary Pierce,Retail,Christopherville
+195,Jesse Parker,Retail,South Brianna
+196,Nathan Stewart,Online,South Monicamouth
+197,Tiffany Vaughn,Retail,West Kimberly
+198,Parker Hill,Wholesale,New Cynthiahaven
+199,Paige Carlson,Online,Port Michael
+200,Dr. Elizabeth Ward,Online,East Curtis
