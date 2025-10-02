@@ -1,42 +1,4 @@
-'''
-I will recreate part of my routine at work, loading csv into SSMS, but as I dont have work SSMS available, I will load data into SQLite and later on I will modify the script with pyodbc as syntax stays the same.
-Task:
-Extract data from .csv file in the folder into SQLite (and after that to SSMS - as I have it at work :) )
 
-- check folder for .csv file. +
-- load csv for the analysis into temp_temp table +
-- ask user if this is the file to be loaded, provide min(DT)/max(DT) from file contents+
-- if no - exit AND delete temp_temp contents +
-- if yes - copy temp_temp into master_temp for further processing within SQL and loading into final tables (out of scope) +
-- save SQLite+
-- move file into /Archive folder?????
-
-DQ check before loading:
-1. Takes sqlite table +
-2. Outputs number of rows per date AND sum of volume per date +
-3. Compares it to average number and sum of volume +
-4. If difference is > 25% - inform user +
-5. If all OK - copy data from temp_temp into master_temp table and delete temp_temp contents
----------------------------------------------------------------------------------------
- hashed out data loading procedure - last time used to ingest DUMMY REFERENCE FILE
-conn_0.execute('CREATE TABLE IF NOT EXISTS master_temp (category TEXT NULL,level TEXT NULL, distribution_channel TEXT NULL, period TEXT NULL, dt TEXT NULL, manufacturer TEXT NULL, brand TEXT NULL, BBSKU TEXT NULL, NAMESKU TEXT NULL, ean TEXT NULL, segment TEXT NULL, format TEXT NULL, tar_rmce TEXT NULL, vol NUMERIC NULL, val NUMERIC NULL, rcnt NUMERIC NULL, qty NUMERIC NULL, shvol NUMERIC NULL, shval NUMERIC NULL, shrcnt NUMERIC NULL, shqty NUMERIC NULL, dntot NUMERIC NULL, dn NUMERIC NULL, dnvol NUMERIC NULL, dnval NUMERIC NULL, dwqty NUMERIC NULL, dwvaltot NUMERIC NULL, shsvol NUMERIC NULL, shsval NUMERIC NULL, avp NUMERIC NULL, avpjm NUMERIC NULL, avtvol NUMERIC NULL, avtval NUMERIC NULL, avtqty NUMERIC NULL, avsvol NUMERIC NULL, avsval NUMERIC NULL, avsrcnt NUMERIC NULL, avsqty NUMERIC NULL, avgsku NUMERIC NULL )')
-
-for file in list(CSV_file):
-    CSV = open(file)
-    CSV_dict_reader = csv.DictReader(CSV,delimiter = '\t')
-    dict_data = list(CSV_dict_reader)
-
-with open(file,'r') as fin:
-    dr = csv.DictReader(fin, delimiter='\t')
-    to_db = [(i['Category'] ,i['level'] ,i['distribution_channel'] ,i['period'] ,i['dt'] ,i['manufacturer'] ,i['brand'] ,i['BBSKU'] ,i['NAMESKU'] ,i['ean'] ,i['segment'] ,i['format'] ,i['tar_rmce'] ,i['vol'] ,i['val'] ,i['rcnt'] ,i['qty'] ,i['shvol'] ,i['shval'] ,i['shrcnt'] ,i['shqty'] ,i['dntot'] ,i['dn'] ,i['dnvol'] ,i['dnval'] ,i['dwqty'] ,i['dwvaltot'] ,i['shsvol'] ,i['shsval'] ,i['avp'] ,i['avpjm'] ,i['avtvol'] ,i['avtval'] ,i['avtqty'] ,i['avsvol'] ,i['avsval'] ,i['avsrcnt'] ,i['avsqty'] ,i['avgsku']) for i in dr]
-
-    cur_0.executemany('INSERT INTO master_temp (Category ,level ,distribution_channel ,period ,dt ,manufacturer ,brand ,BBSKU ,NAMESKU ,ean ,segment ,format ,tar_rmce ,vol ,val ,rcnt ,qty ,shvol ,shval ,shrcnt ,shqty ,dntot ,dn ,dnvol ,dnval ,dwqty ,dwvaltot ,shsvol ,shsval ,avp ,avpjm ,avtvol ,avtval ,avtqty ,avsvol ,avsval ,avsrcnt ,avsqty ,avgsku) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);', to_db)
-    conn_0.commit()
-
-
-
-------------------------------------------------------------------------------------------
-'''
 
 import sqlite3, csv, os, shutil, datetime, sys
 from pathlib import Path
