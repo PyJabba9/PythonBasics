@@ -1,0 +1,6 @@
+{
+	"Driver": "*****",
+	"Server": "*****",
+	"Database": "*****",
+	"Trusted_Connection": "yes"
+}
